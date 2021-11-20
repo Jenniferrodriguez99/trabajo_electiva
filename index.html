@@ -40,7 +40,6 @@
             highlightLayer = e.target;
             highlightLayer.openPopup();
         }
-        <center>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
         })
@@ -54,7 +53,6 @@
             primaryAreaUnit: 'sqfeet',
             secondaryAreaUnit: 'sqmiles'
         });
-            </center>
         measureControl.addTo(map);
         document.getElementsByClassName('leaflet-control-measure-toggle')[0]
         .innerHTML = '';
